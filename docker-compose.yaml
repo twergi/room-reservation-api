@@ -14,6 +14,13 @@ services:
       container_name: backend_django
       build:
         context: ./backend
+        args:
+          - DJANGO_SECRET="just_for_build_default_dummy_value"
+          - DEBUG=""
+          - POSTGRES_DB=""
+          - POSTGRES_USER=""
+          - POSTGRES_PASSWORD=""
+          - POSTGRES_HOST=""
       restart: always
       ports:
         - 8000:8000

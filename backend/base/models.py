@@ -14,7 +14,7 @@ class Room(models.Model):
         verbose_name="Room number",
     )
     price: float = models.FloatField(verbose_name="Cost per day")
-    capacity: int = models.PositiveIntegerField(verbose_name="Room capcity")
+    capacity: int = models.PositiveIntegerField(verbose_name="Room capacity")
 
     class Meta:
         verbose_name: str = "Room"
